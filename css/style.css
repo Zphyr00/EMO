@@ -1,0 +1,113 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+.trainer-container {
+    width: 100%;
+    max-width: 900px;
+}
+
+.seasons-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+.seasons-table th,
+.seasons-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    height: 80px;
+}
+
+.seasons-table thead th {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.seasons-table thead th img {
+    border: 1px solid #000;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    margin: 10px auto 0;
+    font-size: 12px;
+}
+
+.seasons-table thead th span {
+    display: block;
+    margin-top: 5px;
+}
+
+.month-cell {
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 15%;
+}
+
+.option-cell {
+    width: 21.25%;
+}
+
+.option-cell input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #000;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
+}
+
+.option-cell input[type="radio"]:checked {
+    background: transparent url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJTxrBvXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTA4MCAxMDgwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDgwIDEwODAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiMzMUE0MUMiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIzMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIGQ9Ik01MDYuOTMsNDkzLjE1Yy01NS44LTc1Ljk1LTExMS42MS0xNTEuODktMTY3LjQxLTIyNy44NGMtMjYuNTIsNi4yOS03MC4yNCwyMC4zNC0xMTQuNSw1My44NWMtNTcuNDEsNDMuNDYtODQuNzcsOTYuMjMtOTYuMzEsMTIyLjY4YzY5Ljc2LDkxLjg0LDEzOS41MSwxODMuNjksMjA5LjI3LDI3NS41MyIvPjxwYXRoIGZpbGw9IiMzMUE0MUMiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIzMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIGQ9Ik00OTQuMDEsNDc2LjEyYzgwLjkxLTEwNi41OSwxNjEuODItMjEzLjE4LDI0Mi43Mi0zMTkuNzdjMTUuOTgtMS4yMSw3Ny42NC00LjAxLDEzNS44MSwzOC44M2M2MS44MSw0NS41Myw3NiwxMTAuNCw3OC44NSwxMjUuMmMtNTQuMjcsNzEuNDQtMTYyLjgsMjE0LjM1LTE2Mi44LDIxNC4zNXMtODcuOTQsMTE1Ljc5LTEzMS45MSwxNzMuNjhjLTU0LjM4LDcxLjYtMTA4Ljc2LDE0My4xOS0xNjMuMTMsMjE0Ljc5Yy01Ni42Ny03NC45My0xMTMuMzQtMTQ5LjgwLTE3MC4wMS0yMjQuNzgiLz48L3N2Zz4=") center / contain no-repeat;
+}
+
+.option-cell input[type="radio"]:checked::before {
+    content: none;
+}
+
+.complete-button {
+    float: right;
+    margin-top: 20px;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .trainer-container {
+        overflow-x: auto;
+    }
+
+    .seasons-table {
+        width: auto;
+        min-width: 600px;
+    }
+
+    .complete-button {
+        float: none;
+        width: 100%;
+        margin-top: 15px;
+    }
+}
