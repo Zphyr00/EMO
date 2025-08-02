@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЭМО | Интерактивное обучение</title>
+    <meta name="description" content="Интерактивный тренажёр для проверки знаний о соответствии месяцев временам года.">
+    <meta name="keywords" content="тренажёр, времена года, месяцы, обучение, тест, игра, зима, весна, лето, осень">
+    <meta name="theme-color" content="#1976d2">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="trainer-container">
+        <form id="season-matcher-form">
+            <table class="seasons-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>
+                           <img src="src/winter.png" alt="Иллюстрация зимы">
+                           <span>Зима</span>
+                        </th>
+                        <th>
+                           <img src="src/spring.png" alt="Иллюстрация весны">
+                           <span>Весна</span>
+                        </th>
+                        <th>
+                           <img src="src/summer.png" alt="Иллюстрация лета">
+                           <span>Лето</span>
+                        </th>
+                        <th>
+                            <img src="src/autumn.png" alt="Иллюстрация осени">
+                            <span>Осень</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="months-container">
+                    <!-- Строки с месяцами будут сгенерированы с помощью JavaScript -->
+                </tbody>
+            </table>
+            <button type="submit" class="complete-button">
+                <svg width="24" height="24" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#31A41C" stroke="#000000" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M506.93,493.15c-55.8-75.95-111.61-151.89-167.41-227.84c-26.52,6.29-70.24,20.34-114.5,53.85c-57.41,43.46-84.77,96.23-96.31,122.68c69.76,91.84,139.51,183.69,209.27,275.53"/>
+                    <path fill="#31A41C" stroke="#000000" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M494.01,476.12c80.91-106.59,161.82-213.18,242.72-319.77c15.98-1.21,77.64-4.01,135.81,38.83c61.81,45.53,76,110.4,78.85,125.2c-54.27,71.44-162.8,214.35-162.8,214.35s-87.94,115.79-131.91,173.68c-54.38,71.6-108.76,143.19-163.13,214.79c-56.67-74.93-113.34-149.85-170.01-224.78"/>
+                </svg>
+                <span>Завершить задание</span>
+            </button>
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
